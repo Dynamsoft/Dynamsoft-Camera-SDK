@@ -1,0 +1,1 @@
+Change "actionPage" in "./Script/script.js" to switch.

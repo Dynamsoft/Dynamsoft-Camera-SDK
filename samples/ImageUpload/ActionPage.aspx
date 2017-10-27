@@ -12,13 +12,13 @@
         
         if (File.Exists(filePath + fileName))
         {
-            var iniNum = 0;
+            int iniNum = 0;
             if (fileName.Contains("(") && fileName.Contains(")"))
             {
-                var leftPhPos = fileName.LastIndexOf("(");
-                var rightPhPos = fileName.LastIndexOf(")");
+                int leftPhPos = fileName.LastIndexOf("(");
+                int rightPhPos = fileName.LastIndexOf(")");
                 if (leftPhPos < rightPhPos) {
-                    var numStr = fileName.Substring(leftPhPos + 1, rightPhPos - leftPhPos - 1);
+                    string numStr = fileName.Substring(leftPhPos + 1, rightPhPos - leftPhPos - 1);
                     if (int.TryParse(numStr, out iniNum))
                     {
                         fileName = fileName.Substring(0, leftPhPos) + fileName.Substring(rightPhPos + 1);
@@ -28,10 +28,10 @@
                     }
                 }
             }
-            var indexPoint = fileName.LastIndexOf(".");
-            var str1 = fileName.Substring(0, indexPoint) + "(";
-            var str2 = ")" + fileName.Substring(indexPoint);
-            for (var i = iniNum; ; ++i)
+            int indexPoint = fileName.LastIndexOf(".");
+            string str1 = fileName.Substring(0, indexPoint) + "(";
+            string str2 = ")" + fileName.Substring(indexPoint);
+            for (int i = iniNum; ; ++i)
             {
                 if (!File.Exists(filePath + (str1 + i + str2)))
                 {
