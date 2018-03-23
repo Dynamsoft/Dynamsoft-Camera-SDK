@@ -45,6 +45,7 @@ function onBtnShowDocumentEditor(){
 	if (!dcsObject) return;
 	if(imageViewer.image.getCount()==0) return;
 	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 	document.body.style.overflow = 'hidden';
     var documentEditorWrapper = document.getElementById("documentEditorWrapper");
 	documentEditorWrapper.style.visibility = 'visible';
@@ -111,6 +112,10 @@ function onBtntoColor(){
 function onBtntoGray(){
     if (!documentEditor) return;
 	documentEditor.document.toGrey();
+};
+function onBtntoBW(){
+    if (!documentEditor) return;
+	documentEditor.document.toBlackWhite();
 };
 
 function onBtnRotateL(){

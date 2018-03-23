@@ -1,6 +1,6 @@
 # Dynamsoft Camera SDK
 
-version 6.0
+version 6.1
 
 ## Introduction
 [Dynamsoft Camera SDK][1] provides JavaScript APIs that enable you to easily capture images and video streams from USB Video Class (UVC) compatible webcams from within a browser. With the browser-based webcam library, you can capture a live video stream into a container and grab an image with a couple lines of code in your web application.
