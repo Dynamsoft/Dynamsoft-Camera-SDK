@@ -95,5 +95,8 @@ http://www.dynamsoft.com/Downloads/dynamsoft-webcam-sdk-sample-download.aspx
 ## Screenshot
 ![image](http://www.dynamsoft.com/assets/images/illus-dws-overview-feature.png)
 
+## License Agreement
+https://www.dynamsoft.com/Products/webcam-sdk-license.aspx
+
 [1]:http://www.dynamsoft.com/Products/dynamsoft-webcam-sdk.aspx
 [2]:http://www.dynamsoft.com/Products/webcam-sdk-features.aspx
